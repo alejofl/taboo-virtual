@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taboo Virtual</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style media="screen">
+      h1 {
+        font-size: 3.5rem;
+        color: darkcyan;
+        text-align: center;
+        padding: 20px;
+      }
+      .btn-outline-primary {
+        color: darkcyan;
+        border-color: darkcyan;
+        width: fit-content;
+        display: inline-block;
+        margin: 16px;
+      }
+      .btn-outline-primary:hover {
+        background-color: darkcyan !important;
+        border-color: darkcyan !important;
+      }
+      .btn-outline-primary:active {
+        background-color: darkcyan !important;
+        border-color: darkcyan !important;
+      }
+      .btn-outline-primary:focus {
+        background-color: darkcyan !important;
+        border-color: darkcyan !important;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      div {
+        text-align: center;
+      }
+    </style>
+    <script type="text/javascript">
+      window.onload = choosePic;
+      function choosePic() {
+        var randomNum = Math.floor(Math.random() * 992);
+        var random = randomNum + 1
+        document.getElementById("image").src = 'images/card' + random + '.jpg';
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Taboo Virtual</h1>
+    <img id="image" src="">
+    <div>
+      <a href="index.html" role="button" class="btn btn-outline-primary btn-lg">Nueva Carta</a>
+    </div>
+  </body>
+</html>
